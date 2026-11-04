@@ -1,0 +1,15 @@
+// this is for lab4_input.php
+<?php
+$json = file_get_contents('php://input');
+
+$data = json_decode($json);
+
+echo "Username: " . $data->username . "\n";
+echo "Password: " . $data->password;
+?>
+
+// this is the code for Access and display the received values.v bv b vb v bv
+{
+    "username": "admin",
+    "password": "1234"
+}

@@ -1,0 +1,11 @@
+<?php
+$json = '{"name":"Joaquin","age":20,"email":"joaquinbendulo14@gmail.com"}';
+$object = json_decode($json);
+$array = json_decode($json, true);
+
+echo "Object: " . $object->name . "\n";
+echo "Email: " . $object->email . "\n\n";
+
+echo "Array: " . $array["name"] . "\n";
+echo "Email: " . $array["email"];
+?>
